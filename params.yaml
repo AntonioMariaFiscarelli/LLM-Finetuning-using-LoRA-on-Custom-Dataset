@@ -1,0 +1,21 @@
+
+PDFtoQA:
+  num_records: 5
+  chunk_limit: 2   # set to an integer for testing
+
+finetuning:
+  training:
+    num_train_epochs: 50
+    batch_size: 10
+    num_proc: 8
+  quantization:
+    load_in_4bit: true
+    bnb_4bit_use_double_quant: true
+    bnb_4bit_quant_type: "nf4"
+    bnb_4bit_compute_dtype: "bfloat16"
+  lora:
+    r: 256
+    lora_alpha: 512
+    lora_dropout: 0.05
+    target_modules: "all-linear"
+    task_type: "CAUSAL_LM"

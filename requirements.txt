@@ -1,0 +1,12 @@
+colorama>=0.4.6
+docling>=2.31.0
+litellm>=1.69.0 
+pydantic>=2.9.2
+
+datasets>=2.19.0
+transformers>=4.44.0
+trl>=0.9.6
+peft>=0.11.1
+torch>=2.4.0
+bitsandbytes>=0.43.1
+hf_transfer>=0.1.6
