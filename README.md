@@ -13,7 +13,7 @@ This repository demonstrates how to fine‑tune large language models (LLMs) usi
 
 ## 📂 Project Structure
 - `main.py` – entry point for training and evaluation
-- `src/` – helper scripts (data preprocessing, finetuning, prompt generation)
+- `src/` – scripts (PDFtoQA.py, finetuning.py)
 - `data/` – place your custom dataset files (e.g., `QA.json`)
 - `workspace/` – model checkpoints and outputs (ignored in `.gitignore`)
 - `.gitignore` – ensures large files (weights, cache, PDFs) are not pushed to GitHub
